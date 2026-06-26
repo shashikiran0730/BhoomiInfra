@@ -1,9 +1,8 @@
 export const statistics = [
-  { label: "Projects Completed", value: "50+" },
-  { label: "Projects Ongoing", value: "12" },
-  { label: "Happy Clients", value: "120+" },
-  { label: "Customer Satisfaction", value: "100%" },
-  { label: "Years Experience", value: "10+" },
+  { label: "Projects Completed", value: "4+" },
+  { label: "Projects Ongoing", value: "2" },
+  { label: "Happy Families", value: "50+" },
+  { label: "Years of Excellence", value: "5+" },
 ];
 
 export const serviceItems = [
@@ -30,14 +29,54 @@ export const serviceItems = [
 ];
 
 export const trustPoints = [
-  "Quality Construction",
-  "Transparent Pricing",
-  "On-Time Delivery",
-  "Premium Materials",
-  "Experienced Engineers",
-  "Regular Updates",
-  "Customer First Approach",
-  "Legal Compliance",
+  {
+    icon: "🏗️",
+    title: "Quality Construction",
+    description:
+      "Built using premium construction techniques and superior engineering standards to ensure durability for generations.",
+  },
+  {
+    icon: "💎",
+    title: "Premium Materials",
+    description:
+      "We use only trusted brands and high-quality materials that deliver strength, elegance, and long-term reliability.",
+  },
+  {
+    icon: "💰",
+    title: "Transparent Pricing",
+    description:
+      "No hidden costs. Every detail is communicated clearly, ensuring complete peace of mind throughout your investment.",
+  },
+  {
+    icon: "⏱️",
+    title: "On-Time Delivery",
+    description:
+      "We value your time and strive to deliver every project as promised without compromising on quality.",
+  },
+  {
+    icon: "👷",
+    title: "Experienced Engineers",
+    description:
+      "Our skilled engineers and site professionals monitor every stage of construction with precision and care.",
+  },
+  {
+    icon: "📸",
+    title: "Regular Updates",
+    description:
+      "Receive consistent construction progress updates, photos, and milestone reports throughout the project.",
+  },
+  {
+    icon: "🤝",
+    title: "Customer First",
+    description:
+      "From your first visit to project handover, we are committed to delivering an exceptional customer experience.",
+  },
+  {
+    icon: "📜",
+    title: "Legal Compliance",
+    description:
+      "Every project is developed with complete legal transparency and adherence to all applicable regulations.",
+  },
 ];
 
 export const timelineSteps = [

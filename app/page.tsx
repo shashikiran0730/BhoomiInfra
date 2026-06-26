@@ -1,37 +1,12 @@
 import { getSiteInfo, getProjects } from "../lib/db";
 import HeroSection from "../components/home/HeroSection";
-import CalloutBar from "../components/home/CalloutBar";
-import AboutOverview from "../components/home/AboutOverview";
 import TrustGrid from "../components/home/TrustGrid";
-import ServiceGrid from "../components/home/ServiceGrid";
+import AmenitiesSection from "../components/home/AmenitiesSection";
 import ProjectsSection from "../components/home/ProjectsSection";
 import TimelineSection from "../components/home/TimelineSection";
 import GallerySection from "../components/home/GallerySection";
 import TestimonialsSection from "../components/home/TestimonialsSection";
 import CtaSection from "../components/home/CtaSection";
-
-const serviceItems = [
-  {
-    icon: "🧭",
-    title: "Planning",
-    description: "Smart planning for better living.",
-  },
-  {
-    icon: "🏗️",
-    title: "Construction",
-    description: "Quality construction built to last.",
-  },
-  {
-    icon: "🎨",
-    title: "Renovation",
-    description: "Transforming spaces with care.",
-  },
-  {
-    icon: "🛋️",
-    title: "Interior",
-    description: "Designing interiors that inspire.",
-  },
-];
 
 const trustPoints = [
   "Quality Construction",
@@ -75,10 +50,8 @@ export default function HomePage() {
   return (
     <main className="page-shell">
       <HeroSection />
-      <CalloutBar />
-      <AboutOverview info={info} />
       <TrustGrid />
-      <ServiceGrid />
+      <AmenitiesSection />
       <ProjectsSection projects={projects} />
       <TimelineSection />
       <GallerySection />

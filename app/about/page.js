@@ -1,4 +1,5 @@
 import { getSiteInfo } from "../../lib/db";
+import AboutOverview from "../../components/home/AboutOverview";
 
 export default function AboutPage() {
   const info = getSiteInfo();
@@ -11,6 +12,8 @@ export default function AboutPage() {
           {info.description}
         </p>
       </section>
+
+      <AboutOverview info={info} />
 
       <section className="section-projects">
         <div className="section-heading">
@@ -30,27 +33,6 @@ export default function AboutPage() {
           <article>
             <h3>Design-led execution</h3>
             <p>Our teams deliver beautiful residential and commercial spaces that fit your vision.</p>
-          </article>
-        </div>
-      </section>
-
-      <section className="section-workflow">
-        <h2>Project types we build</h2>
-        <div className="workflow-grid">
-          <article>
-            <span>1</span>
-            <h3>Custom homes</h3>
-            <p>From site planning to finishes, we build homes shaped around your lifestyle.</p>
-          </article>
-          <article>
-            <span>2</span>
-            <h3>Commercial spaces</h3>
-            <p>Retail, workspace, and mixed-use projects delivered with practical timelines.</p>
-          </article>
-          <article>
-            <span>3</span>
-            <h3>Renovations</h3>
-            <p>Carefully executed upgrades for remodels, interiors, and exterior transformations.</p>
           </article>
         </div>
       </section>

@@ -1,9 +1,11 @@
 import ContactForm from "../../components/ContactForm";
-import { getContactInfo, getMapLocation } from "../../lib/db";
+import AboutOverview from "../../components/home/AboutOverview";
+import { getContactInfo, getMapLocation, getSiteInfo } from "../../lib/db";
 
 export default function ContactPage() {
   const contact = getContactInfo();
   const map = getMapLocation();
+  const info = getSiteInfo();
 
   return (
     <main className="page-shell">
@@ -11,6 +13,8 @@ export default function ContactPage() {
         <h1>Let's build your next project</h1>
         <p>Share your requirements and we will schedule a site visit, estimate, and design consultation.</p>
       </section>
+
+      <AboutOverview info={info} />
 
       <div className="contact-grid">
         <aside className="contact-card">
