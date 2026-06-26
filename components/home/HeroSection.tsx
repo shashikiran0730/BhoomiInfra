@@ -15,6 +15,7 @@ export default function HeroSection() {
         <div className="hero-stats">
           {statistics.slice(0, 4).map((item) => (
             <div key={item.label} className="hero-stat-card">
+              <div className="stat-icon">{item.icon}</div>
               <strong>{item.value}</strong>
               <span>{item.label}</span>
             </div>

@@ -1,8 +1,8 @@
 export const statistics = [
-  { label: "Projects Completed", value: "4+" },
-  { label: "Projects Ongoing", value: "2" },
-  { label: "Happy Families", value: "50+" },
-  { label: "Years of Excellence", value: "5+" },
+  { icon: "🏢", label: "Projects Completed", value: "4+" },
+  { icon: "🚧", label: "Projects Ongoing", value: "2" },
+  { icon: "👨‍👩‍👧‍👦", label: "Happy Families", value: "50+" },
+  { icon: "⭐", label: "Years of Excellence", value: "5+" },
 ];
 
 export const serviceItems = [

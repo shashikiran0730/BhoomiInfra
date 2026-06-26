@@ -1,34 +1,30 @@
 import ContactForm from "../../components/ContactForm";
-import AboutOverview from "../../components/home/AboutOverview";
-import { getContactInfo, getMapLocation, getSiteInfo } from "../../lib/db";
+import { getContactInfo, getMapLocation } from "../../lib/db";
 
 export default function ContactPage() {
   const contact = getContactInfo();
   const map = getMapLocation();
-  const info = getSiteInfo();
 
   return (
     <main className="page-shell">
-      <section className="section-intro">
-        <h1>Let's build your next project</h1>
-        <p>Share your requirements and we will schedule a site visit, estimate, and design consultation.</p>
-      </section>
+      <ContactForm />
 
-      <AboutOverview info={info} />
+      <div className="contact-info-section">
+        <div className="contact-info-grid">
+          <div className="info-card">
+            <h3>Reach us</h3>
+            <p><strong>{contact.company}</strong></p>
+            <p>{contact.address}</p>
+            <p>
+              <strong>Phone:</strong> <a href={`tel:${contact.phone}`}>{contact.phone}</a>
+            </p>
+            <p>
+              <strong>Email:</strong> <a href={`mailto:${contact.email}`}>{contact.email}</a>
+            </p>
+          </div>
 
-      <div className="contact-grid">
-        <aside className="contact-card">
-          <h2>Reach us</h2>
-          <p>{contact.company}</p>
-          <p>{contact.address}</p>
-          <p>
-            <strong>Phone:</strong> {contact.phone}
-          </p>
-          <p>
-            <strong>Email:</strong> {contact.email}
-          </p>
-          <div className="map-card">
-            <h2>Our location</h2>
+          <div className="info-card map-card">
+            <h3>Our Location</h3>
             <p>{map.label}</p>
             <div className="map-frame">
               <iframe
@@ -39,9 +35,7 @@ export default function ContactPage() {
               />
             </div>
           </div>
-        </aside>
-
-        <ContactForm />
+        </div>
       </div>
     </main>
   );

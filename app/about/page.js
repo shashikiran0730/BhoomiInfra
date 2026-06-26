@@ -1,5 +1,4 @@
 import { getSiteInfo } from "../../lib/db";
-import AboutOverview from "../../components/home/AboutOverview";
 
 export default function AboutPage() {
   const info = getSiteInfo();
@@ -12,8 +11,6 @@ export default function AboutPage() {
           {info.description}
         </p>
       </section>
-
-      <AboutOverview info={info} />
 
       <section className="section-projects">
         <div className="section-heading">
